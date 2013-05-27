@@ -1,0 +1,95 @@
+!!! 5
+html
+  head
+    
+    link(rel='stylesheet', href='/static/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/static/css/bootstrap-responsive.min.css')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
+    script(src='/static/js/bootstrap.min.js')
+  body 
+    div.navbar.navbar-inverse.navbar-fixed-top
+      div.navbar-inner
+        div.container
+          button.btn.btn-navbar(type="button",data-toggle="collapse",data-target=".nav-collapse")
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+
+
+          a.brand(href="#") #{title}
+          div.nav-collapse.collapse
+            ul.nav
+              li.active
+                a(href="/start")
+              li
+                a(href="/gui/start") Start
+              li.dropdown
+                a.dropdown-toggle(href="./providers", data-toggle="dropdown") Providers
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(href="./providers/my") Mina providers
+                  li
+                    a(href="./providers/create") Skapa provider
+                  li.divider
+                  li.nav-header Provider store
+                  li
+                    a(href="./providers/store/search") Sök provider
+              li.dropdown
+                a.dropdown-toggle(href="#", data-toggle="dropdown") Data
+                  b.caret
+                ul.dropdown-menu
+                  li.nav-header Överföringar
+                  li
+                    a(href="#") Kompletta
+                  li
+                    a(href="#") Pågående
+                  li.divider
+                  li.nav-header Struktur
+                  li
+                    a(href="#") Entiteter
+                  li
+                    a(href="./entity/create") Ny entitet
+                  
+              li.dropdown
+                a.dropdown-toggle(href="#", data-toggle="dropdown") Regler
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(href="#") Import
+                  li
+                    a(href="#") Export
+              li.dropdown
+                a.dropdown-toggle(href="#", data-toggle="dropdown") Appar
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(href="#") Mina appar
+                  li
+                    a(href="#") Skapa appnyckel
+    div.container-fluid(style="padding-top:50px")
+      div.row-fluid
+        div.span3
+          div.well.sidebar-nav
+            ul.nav.nav-list
+              li.nav-header Skapa entitet
+              li.active 
+                a(href="#") Ny
+              li.nav-header Entiteter
+              li
+                a(href="#") Dummy entitet
+              li
+                a(href="#") Dummy entitet
+              li
+                a(href="#") Dummy entitet
+              li
+                a(href="#") Dummy entitet
+              li
+                a(href="#") Dummy entitet
+              li
+                a(href="#") Dummy entitet
+              li
+                a(href="#") Dummy entitet
+              li
+                a(href="#") Dummy entitet
+        div.span9
