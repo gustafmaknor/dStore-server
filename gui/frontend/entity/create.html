@@ -92,4 +92,9 @@ html
                 a(href="#") Dummy entitet
               li
                 a(href="#") Dummy entitet
+              - for(var i=0;i<enteties.length;i++)
+                li
+                  a(href="#")= enteties[i]
+              li
+                a(href="#")= enteties.length
         div.span9
